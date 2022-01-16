@@ -1,3 +1,7 @@
+With Big O, we worry about scale. 
+How the code will be executed if things get bigger and bigger
+
+
 Rule 1: Worst Case
     Always think of the worst case scenario to calculate the big 
     --> findNemo(fish)
@@ -17,3 +21,25 @@ Rule 3: Different terms for inputs
     Big O( a + b)
 
 Rule 4: Drop Non Dominants
+    We always just keep the most important dominant term, most significant
+    -->
+    function printAllNumbersThenAllPairSums(numbers) {
+
+        console.log('these are the numbers:');
+        numbers.forEach(function(number) { // Big O(n)
+        console.log(number);
+        });
+    
+        console.log('and these are their sums:');
+        numbers.forEach(function(firstNumber) { // Big O(n)
+        numbers.forEach(function(secondNumber) { // Big O(n))
+            console.log(firstNumber + secondNumber);
+        });
+        });
+    }
+    
+    printAllNumbersThenAllPairSums([1,2,3,4,5])
+
+    As the inputs increase the size of "n^2" is always more important than the size 
+    of "n"
+     -> Big O( n + n^2 ) -> Big O( n^2 )
