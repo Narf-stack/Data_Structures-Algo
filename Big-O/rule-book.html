@@ -1,0 +1,19 @@
+Rule 1: Worst Case
+    Always think of the worst case scenario to calculate the big 
+    --> findNemo(fish)
+        worst case: Nemo is at the last place in the array  
+
+Rule 2: Remove constant
+    Constant can be dropped while calculating the Big 0
+    -->  Big O(3 + 4n) become  Big O(n)
+
+ 
+Rule 3: Different terms for inputs 
+    When there are different inputs, you should use different terms
+    --> function compressFirstBpx(boxes, boxes2){
+        console.log(boxes[0]) // Big O(a)
+        console.log(boxes2[0]) // Big O(b)
+    }
+    Big O( a + b)
+
+Rule 4: Drop Non Dominants
