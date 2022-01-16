@@ -8,6 +8,7 @@ function findNemo(fish) {
   for (let i = 0; i < fish.length; i++) {
     if (fish[i] === 'nemo') {
       console.log('Found NEMO!');
+      break // Can increase code efficiency by adding the break, after we found nemo
     }
   }
   let t1 = performance.now();
@@ -15,3 +16,4 @@ function findNemo(fish) {
 }
 
 findNemo(everyone) // O(n) --> Linear Time
+

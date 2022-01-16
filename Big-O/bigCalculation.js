@@ -11,7 +11,7 @@ function funChallenge(input) {
   }
 
 // Big O(3 + 4n)
-
+// Can be simplified to  Big O(n)
 
 function anotherFunChallenge(input) {
     let a = 5; // O(1)
@@ -31,3 +31,4 @@ function anotherFunChallenge(input) {
   }
 
 // Big O(4 + 7n)
+// Can be simplified to  Big O(n)
